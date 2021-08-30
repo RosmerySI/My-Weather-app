@@ -1,0 +1,92 @@
+<html lang="en">
+<header>
+    <title>My Weather</title>
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</header>
+
+<body onload="init()">
+
+    <div id="container">
+        <div class="first" id="first">
+            <input type="text" id="input" placeholder="Add State">
+            <button onclick="findWeather()"><img id="" src="lupa.png" alt=""></button>
+            <a id="showMap" href="Map.html">
+                <p id="párrafoMap"> Map</p> <img id="imageMap" src="gps.png" alt="">
+            </a>
+        </div>
+        <div onclick="hideInput()" id="hideInput">
+            <hr id="hr1">
+            <hr id="hr2">
+            <hr id="hr3">
+        </div>
+        <div id="second" class="switch-button">
+            <h2 id="city"></h2>
+            <div id="switch">
+                <!-- Checkbox -->
+                <input type="checkbox" name="switch-button" id="switch_label" class="switch-button__checkbox">
+                <!-- Botón -->
+                <label for="switch_label" class="switch-button__label"></label>
+            </div>
+        </div>
+
+        <div id="purple_background"></div>
+        <div id="temp"></div>
+        <div id="last">
+
+            <div id="days">
+                <div>
+                    <p id="pt"><b>Today</b></p>
+                </div>
+                <div>
+                    <p id="ptm"><b>Tomorrow</b></p>
+                </div>
+                <div>
+                    <p id="pa"><b>After</b></p>
+                </div>
+            </div>
+        </div>
+        <div id="three">
+            <span>Wind</span>
+            <span>Humidity</span>
+            <span>Visibility</span>
+        </div>
+        <div id="date"> </div>
+        <div id="eye"><img src="eye-24.gif"></div>
+        <div id="drop"><img src="humidity.png" .png></div>
+        <div id="cloud"><img src="wind.png" .png></div>
+        <div id="forecast">
+            <div id="day1" class="today" onclick="chgToday()"></div>
+            <div id="day2" class="tomorrow" onclick="chgTomorrow()"></div>
+            <div id="day3" class="after" onclick="chgAfter()"></div>
+        </div>
+        <div id="dates">
+            <div id="today"></div>
+            <div id="tomorrow"></div>
+            <div id="after"></div>
+            <div id="half1"></div>
+            <div id="half2"></div>
+        </div>
+        <div> <a id="next" href="index 1.html">
+                <p id="p1"> <b> Next Hours </b></p>
+            </a></div>
+        <div id="message"></div>
+        <audio  src="rain.wav"autoplay id="musicRain"></audio>
+        <audio  src="thunder.wav"autoplay id="musicThunder"></audio>
+        <audio  src="birds.wav" autoplay id="musicSun"></audio>
+        <audio  src="fog.wav" autoplay id="musicFog"></audio>
+    <script src="moment-with-locales.js"></script>    
+    <script src="javascript.js"></script>
+    <script src="map.js"></script>
+    <script src="storm.js"></script>
+    <script src="rain.js"></script>
+    <script src="sun.js"></script>
+    <script src="fog.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+
+</body>
+
+</html>

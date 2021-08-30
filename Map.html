@@ -1,0 +1,36 @@
+<html>
+<header>
+    <title>My Weather</title>
+    <link rel="stylesheet" href="map.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+</header>
+
+<body onload="look()" >
+
+    <div id="container">
+
+        <div class="first" id="first">
+            <div id="back"><a id="a1" href="index.html">←</a></div>
+            <div>
+                <h3 id="title">Map</h3>
+            </div>
+            <div id="switch" class="switch-button">
+                <!-- Checkbox -->
+                <input type="checkbox" name="switch-button" id="switch_label" class="switch-button__checkbox">
+                <!-- Botón -->
+                <label for="switch_label" class="switch-button__label"></label>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="map.js"></script>
+    <script src="javascript.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi46MPZD0OWOgxUNYCex4xKhTjroWubu0&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+</body>
+
+</html>

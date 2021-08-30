@@ -1,0 +1,150 @@
+<html>
+<header>
+    <title>My Weather</title>
+    <link rel="stylesheet" href="css 1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+</header>
+
+<body onload="init()">
+
+    <div id="container">
+        <div class="scroll-div">
+            <div class="scroll-object">
+                <div class="first" id="first">
+                    <div id="back"><a id="a1" href="index.html">←</a></div>
+                    <div>
+                        <h3 id="title">Next Hours</h3>
+                    </div>
+                    <div id="switch" class="switch-button">
+                        <!-- Checkbox -->
+                        <input type="checkbox" name="switch-button" id="switch_label" class="switch-button__checkbox">
+                        <!-- Botón -->
+                        <label for="switch_label" class="switch-button__label"></label>
+                    </div>
+                </div>
+                <div id="purple_background"></div>
+                <div id="temp">
+                    <p>Today</p>
+                </div>
+                <div class="myChart"><canvas id="myChart"></canvas></div>
+                <div id="second">
+                    <div id="scroll-div1">
+                        <div id="scroll-object1">
+                            <table id="row">
+                                <tr>
+                                    <th class="hide">Time</th>
+                                    <th class="hide">Icons</th>
+                                    <th class="hide">Conditions</th>
+                                    <th class="hide">Max-Min</th>
+                                </tr>
+                                <tbody id="myTable">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="three">
+
+                    <span>Wind</span>
+                    <span>Humidity</span>
+                    <span>Visibility</span>
+
+                </div>
+                <div id="icons">
+                    <div id="eye"><img src="eye-24.gif" .png></div>
+                    <div id="drop"><img src="humidity.png"></div>
+                    <div id="cloud"><img src="wind.png"></div>
+                </div>
+                <div class="first" id="first1">
+                    <div id="back1"><a id="a2" href="index.html">←</a></div>
+                    <div>
+                        <h3 id="title1">Next Hours</h3>
+                    </div>
+
+                </div>
+                <div id="purple_background1"></div>
+                <div id="temp1"></div>
+                <div class="myChart1"><canvas id="myChart1"></canvas></div>
+                <div id="second1">
+                    <div id="scroll-div1">
+                        <div id="scroll-object1">
+                            <table id="row1">
+                                <tr>
+                                    <th class="hide">Time</th>
+                                    <th class="hide">Icons</th>
+                                    <th class="hide">Conditions</th>
+                                    <th class="hide">Max-Min</th>
+                                </tr>
+                                <tbody id="myTable1">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="three1">
+
+                    <span>Wind</span>
+                    <span>Humidity</span>
+                    <span>Visibility</span>
+
+                </div>
+                <div id="icons1">
+                    <div id="eye1"><img src="eye-24.gif" .png></div>
+                    <div id="drop1"><img src="humidity.png"></div>
+                    <div id="cloud1"><img src="wind.png"></div>
+                </div>
+                <div class="first" id="first2">
+                    <div id="back2"><a id="a3" href="index.html">←</a></div>
+                    <div>
+                        <h3 id="title2">Next Hours</h3>
+                    </div>
+
+                </div>
+                <div id="purple_background2"></div>
+                <div id="temp2"></div>
+                <div class="myChart2"><canvas id="myChart2"></canvas></div>
+                <div id="second2">
+                    <div id="scroll-div1">
+                        <div id="scroll-object1">
+                            <table id="row2">
+                                <tr>
+                                    <th class="hide">Time</th>
+                                    <th class="hide">Icons</th>
+                                    <th class="hide">Conditions</th>
+                                    <th class="hide">Max-Min</th>
+                                </tr>
+                                <tbody id="myTable2">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="three2">
+
+                    <span>Wind</span>
+                    <span>Humidity</span>
+                    <span>Visibility</span>
+
+                </div>
+                <div id="icons2">
+                    <div id="eye2"><img src="eye-24.gif" .png></div>
+                    <div id="drop2"><img src="humidity.png"></div>
+                    <div id="cloud2"><img src="wind.png"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+    
+    <script src="javascript 1.js"></script>
+    <!-- <script src="chart.js"></script> -->
+</body>
+
+</html>
